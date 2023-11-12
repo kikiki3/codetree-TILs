@@ -5,5 +5,10 @@ int main() {
 
     scanf("%s", a);
     printf("%s", a);
+
+    char b[15];
+
+    scanf("%s", b);
+    printf("%s", b);
     return 0;
 }
