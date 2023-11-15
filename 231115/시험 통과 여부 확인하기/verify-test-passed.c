@@ -7,7 +7,7 @@ int main() {
         printf("pass");
     }
     else {
-        printf("80-%d more score", a);
+        printf("%d more score", 80-a);
     }
     return 0;
 }
