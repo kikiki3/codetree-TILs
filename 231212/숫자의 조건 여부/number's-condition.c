@@ -3,11 +3,9 @@
 int main() {
     scanf("%d", &a);
     if (a >= 113) {
-        int b = 1;
-        prinf("%d", b);
+        prinf("1");
     }
     else {
-        int c = 0;
-        printf("%d", c);
+        printf("0");
     }
 }
