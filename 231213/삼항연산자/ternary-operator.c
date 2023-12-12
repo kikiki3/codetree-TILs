@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
-    scanf("%d", &a);
+    int score;
+    scanf("%d", &score);
 
-    b = a = 100 ? printf("pass") : printf("failure");
+    printf((score == 100 ? "pass" : "failure"));
 }
