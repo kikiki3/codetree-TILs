@@ -14,7 +14,7 @@ int main() {
         printf("Paul");
     }
     else {
-        printf("Vacany");
+        printf("Vacancy");
     }
     return 0;
 }
