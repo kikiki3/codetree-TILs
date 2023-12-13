@@ -7,7 +7,7 @@ int main() {
     if (eye >= 1.0) {
         printf("High");
     }
-    else if (1.0 > eye >= 0.5) {
+    else if (eye >= 0.5) {
         printf("Middle");
     }
     else {
