@@ -16,4 +16,5 @@ int main() {
     else {
         printf("Vacany");
     }
+    return 0;
 }
