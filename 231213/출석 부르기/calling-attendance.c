@@ -4,13 +4,13 @@ int main() {
     int a;
     scanf("%d", &a);
 
-    if (a = 1) {
+    if (a == 1) {
         printf("John");
     }
-    else if (a = 2) {
+    else if (a == 2) {
         printf("Tom");
     }
-    else if (a = 3) {
+    else if (a == 3) {
         printf("Paul");
     }
     else {
