@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
+    //변수 선언
+    int a, b, i;
+
     scanf("%d %d", &a, &b);
 
-    printf("%d ", a);
+    i = a;
 
-    for (a; a < b; a+=0) {
-        if (a % 2 != 0) {
-            a *= 2;
+    while (i <= b) {
+        printf("%d ", i);
+        if (i % 2 == 1) {
+            i *= 2;
         }
-        else if (a % 2==0) {
-            a+=3;
-        }
-        
-        if (a <= b) {
-            printf("%d ", a);
+        else {
+            i += 3;
         }
     }
+    return 0;
 }
