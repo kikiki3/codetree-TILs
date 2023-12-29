@@ -1,21 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n, cnt = 0, tmp = 0;
-    
-    for (int i=0; i < 10; i++) {
-        scanf("%d\n", &n);
+    int a, cnt3 = 0. cnt5 = 0;
 
-        if (n % 3 == 0 && n % 5 == 0) {
-            cnt++;
-            tmp++;
+    for (int i = 1; i <= 10; i++) {
+        scanf("%d", &a);
+
+        if (a % 3 == 0) {
+            cnt3++;
         }
-        else if (n % 3 == 0) {
-            cnt++;
-        }
-        else if (n % 5 == 0) {
-            tmp++;
+        if (a % 5 == 0) {
+            cnt5++;
         }
     }
-    printf("%d %d", cnt, tmp);
+
+    printf("%d %d", cnt3, cnt5);
 }
