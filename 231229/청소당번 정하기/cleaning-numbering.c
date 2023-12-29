@@ -2,21 +2,21 @@
 
 int main() {
     int n;
-    int a = 0, b = 0, c = 0;
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; i++) {
+    int cnt2 = 0, cnt3 = 0, cnt12 =0;
 
-        if ((i % 2 == 0 && i % 12 == 0) || (i % 3 == 0 && i % 12 == 0)) {
-            c++;
+    for (int i = 1; i <= n; i++) {
+        if (i % 12 == 0) {
+            cnt12++;
         }
-        else if (i % 3 == 0 || i % 2 == 0 && i % 3 == 0) {
-            b++;
+        else if (i % 3 == 0) {
+            cnt3++;
         }
         else if (i % 2 == 0) {
-            a++;
+            cnt2++;
         }
     }
 
-    printf("%d %d %d", a, b, c);
+    printf("%d %d %d", cnt2, cnt3, cnt12);
 }
