@@ -6,8 +6,7 @@ int main() {
 
     printf("%d ", a);
 
-    while (a < b) {
-
+    for (a; a < b; a+=0) {
         if (a % 2 != 0) {
             a *= 2;
         }
