@@ -2,15 +2,11 @@
 
 int main() {
     int a;
-    scanf("%d", &a);
-    int n;
-    int m;
 
+    scanf("%d", &a);
 
     for (int i = 1; i <= a; i++) {
-        n = i / 8;
-        m = i % 7;
-        if (i % 2 == 0 && i % 4 != 0 || n % 2 == 0 || m < 4)
+        if ((i % 2 == 0 && i % 4 != 0) || (i / 8) % 2 == 0 || (i % 7) < 4 )
         continue;
 
         printf("%d ", i);
