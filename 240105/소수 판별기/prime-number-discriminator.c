@@ -14,7 +14,7 @@ int main() {
     if (satisfied == true) {
         printf("P");
     }
-    else {
+    else if (satisfied == false){
         printf("C");
     }
 }
