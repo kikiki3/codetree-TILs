@@ -7,14 +7,17 @@ int main() {
 
     scanf("%d %d %d", &a, &b, &c);
 
+    bool satisfied = false;
+
     for (int i = a; i <= b; i++) {
         if (i % c == 0) {
-            printf("YES");
-            break;
+            satisfied = true;
         }
-        else {
-            printf("NO");
-            break;
-        }
+    }
+    if (satisfied == true) {
+        printf("YES");
+    }
+    else {
+        printf("NO");
     }
 }
