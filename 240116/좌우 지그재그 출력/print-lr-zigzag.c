@@ -16,11 +16,12 @@ int main() {
                 }
             }
             else if (i % 2 == 1) {
-                if (dnt == (i-1)*(n+1)) {
-                    dnt = n*(i+1);
-                }
+                
                 dnt--;
                 printf("%d ", dnt);
+                if (dnt == (i)*(n+1)) {
+                    dnt = n*(i+2);
+                }
             }
         }
         printf("\n");
