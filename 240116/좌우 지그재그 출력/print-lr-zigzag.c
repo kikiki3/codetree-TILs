@@ -19,7 +19,7 @@ int main() {
                 
                 dnt--;
                 printf("%d ", dnt);
-                if (dnt == (i)*(n+1)) {
+                if (dnt == (i)*(n+1)+1) {
                     dnt = n*(i+3);
                 }
             }
