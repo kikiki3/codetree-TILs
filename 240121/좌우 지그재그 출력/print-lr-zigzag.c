@@ -12,7 +12,8 @@ int main() {
             else {
                 printf("%d ", (i * n)+n-j);
             }
-            printf("\n");
+            
         }
+        printf("\n");
     }
 }
