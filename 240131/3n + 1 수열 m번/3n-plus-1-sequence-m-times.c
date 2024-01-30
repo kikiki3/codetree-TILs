@@ -4,9 +4,9 @@ int main() {
     int m;
     scanf("%d", &m);
     int n;
-    int cnt = 0;
 
     for (int i = 0; i < m; i++) {
+        int cnt = 0;
         scanf("%d", &n);
         while (n != 1) {
             if (n % 2 == 0) {
