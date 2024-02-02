@@ -8,12 +8,15 @@ int main() {
         scanf("%d", &arr[i]);
 
         if (arr[i] == 0){
-            n = i;
+            n = i-1;
             break;
+        }
+        else {
+            n = i;
         }
     }
 
-    for (int j = n-1; j >= 0; j--) {
+    for (int j = n; j >= 0; j--) {
         printf("%d ", arr[j]);
     }
 }
