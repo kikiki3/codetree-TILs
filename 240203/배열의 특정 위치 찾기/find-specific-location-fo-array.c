@@ -18,6 +18,6 @@ int main() {
             cnt++;
         }
     }
-    avg = r / cnt;
+    avg = (double)r / cnt;
     printf("%d %.1lf", sum, avg);
 }
