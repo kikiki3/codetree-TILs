@@ -12,7 +12,7 @@ int main() {
         }
     }
 
-    if (n == 5) {
+    if (n % 5 == 0) {
         for (int i = 1; i <= 2; i++) {
             printf("%d ", arr[i]);
         }
