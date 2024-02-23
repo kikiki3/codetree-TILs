@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    char dax[6] = {'L', 'E', 'B', 'R', 'O'};
+    char dax[6] = {'L', 'E', 'B', 'R', 'O', 'S'};
 
     int idx = -1;
 
