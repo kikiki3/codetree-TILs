@@ -14,7 +14,7 @@ int main() {
         }
     }
 
-    if (idx == 1) {
+    if (idx == -1) {
         printf("None");
     }
     else {
