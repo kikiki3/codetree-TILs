@@ -28,6 +28,7 @@ int main() {
                 }
             }
         }
+        continue;
     }
 
     if (cnt == n2) {
