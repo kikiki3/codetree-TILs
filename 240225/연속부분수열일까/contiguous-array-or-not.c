@@ -25,6 +25,9 @@ int main() {
                 if (A[i+j] == B[j]) {
                     cnt++;
                 }
+                else {
+                    continue;
+                }
             }
             break;
         }
