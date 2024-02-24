@@ -29,7 +29,7 @@ int main() {
                     }
                 }
             }
-            if (cnt <= n2) {
+            if (cnt < n2) {
                 cnt = 0;
                 continue;
             }
