@@ -17,21 +17,20 @@ int main() {
         scanf("%d ", &B[i]);
     }
 
+    int cnt = 0;
+
     for (int i = 0; i < n1; i++) {
         if (B[0] == A[i]) {
             for (int j = 0; j < n2; j++) {
                 if (B[j] == A[i+j]) {
-                    printf("Yes");
-                    break;
-                }
-                else {
-                    printf("No");
-                    break;
+                    cnt++;
                 }
             }
         }
-        else {printf("No");
-        break;}
-
     }
+
+    if (cnt == n2) {
+        printf("Yes");
+    }
+    else {printf("No");}
 }
