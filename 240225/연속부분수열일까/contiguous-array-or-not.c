@@ -17,10 +17,11 @@ int main() {
         scanf("%d ", &B[i]);
     }
 
+    int cnt = 0;
 
     for (int i = 0; i < n1; i++) {
-        int cnt = 0;
         if (A[i] == B[0]) {
+            cnt = 0;
             for (int j = 0; j < n2; j++) {
                 if (A[i+j] == B[j]) {
                     cnt++;
