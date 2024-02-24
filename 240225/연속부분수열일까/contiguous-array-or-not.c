@@ -21,14 +21,19 @@ int main() {
 
     for (int i = 0; i < n1; i++) {
         if (A[i] == B[0]) {
-            cnt = 0;
             for (int j = 0; j < n2; j++) {
                 if (A[i+j] == B[j]) {
                     cnt++;
+                    if (cnt == n2) {
+                        break;
+                    }
                 }
             }
+            if (cnt <= n2) {
+                cnt = 0;
+                continue;
+            }
         }
-        continue;
     }
 
     if (cnt == n2) {
