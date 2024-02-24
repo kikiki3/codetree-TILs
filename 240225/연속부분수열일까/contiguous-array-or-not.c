@@ -18,18 +18,15 @@ int main() {
     }
 
     int cnt = 0;
-
+    
     for (int i = 0; i < n1; i++) {
         if (A[i] == B[0]) {
+            int cnt = 0;
             for (int j = 0; j < n2; j++) {
                 if (A[i+j] == B[j]) {
                     cnt++;
                 }
-                else {
-                    continue;
-                }
             }
-            break;
         }
     }
 
