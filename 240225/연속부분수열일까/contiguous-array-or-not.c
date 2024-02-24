@@ -17,27 +17,29 @@ int main() {
         scanf("%d ", &B[i]);
     }
 
-    int cnt = 0;
+    int isRight = 0;
 
     for (int i = 0; i < n1; i++) {
         if (A[i] == B[0]) {
             for (int j = 0; j < n2; j++) {
-                if (A[i+j] == B[j]) {
-                    cnt++;
-                    if (cnt == n2) {
-                        break;
+                if (n2 + i <= n1) {
+                    isRight = 1;
+                    for (int j = 0; j < n2; j++) {
+                        if (A[i+j] != B[j]) {
+                            isRight = 0;
+                            break;
+                        }
                     }
                 }
             }
-            if (cnt < n2) {
-                cnt = 0;
-                continue;
+            if (isRight == 1) {
+                break;
             }
         }
     }
 
-    if (cnt == n2) {
-        printf("Yes");
+    if (isRight == 0) {
+        printf("No");
     }
-    else {printf("No");}
+    else {printf("Yes");}
 }
