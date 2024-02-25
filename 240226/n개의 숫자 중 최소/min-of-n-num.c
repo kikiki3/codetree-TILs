@@ -17,12 +17,12 @@ int main() {
     for (int i = 0; i < N; i++) {
         if (min_val > N_arr[i]) {
             min_val = N_arr[i];
-            if (min_val == N_arr[i]) {
-                cnt++;
-            }
-            else {
-                cnt = 0;
-            }
+        }
+    }
+
+    for (int i = 0; i < N; i++) {
+        if (N_arr[i] == min_val) {
+            cnt++;
         }
     }
 
