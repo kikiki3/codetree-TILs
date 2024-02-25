@@ -20,7 +20,10 @@ int main() {
         }
     }
 
-    int max_2 = N_arr[max_i - 1];
+    int max_2 = N_arr[0];
+    if (max_2 == N_arr[max_i]) {
+        max_2 = N_arr[max_i+1];
+    }
     
     for (int i = 0; i < N; i++) {
         if (max_2 < N_arr[i] && i != max_i) {
