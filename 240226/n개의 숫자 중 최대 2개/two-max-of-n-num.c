@@ -20,9 +20,11 @@ int main() {
         }
     }
 
+    int n = N - max_i;
+
     int max_2 = N_arr[0];
     if (max_2 == N_arr[max_i]) {
-        max_2 = N_arr[max_i+1];
+        max_2 = N_arr[n];
     }
     
     for (int i = 0; i < N; i++) {
