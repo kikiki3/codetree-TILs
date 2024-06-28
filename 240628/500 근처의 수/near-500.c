@@ -11,6 +11,11 @@ int main() {
     int min = a[0];
 
     for (int i = 0; i < 10; i++) {
+        if (a[i] < 500) {
+            max = a[i];
+        }
+    }
+    for (int i = 0; i < 10; i++) {
         if (a[i] < 500 && a[i] > max) {
             max = a[i];
         }
